@@ -1,6 +1,10 @@
-# Ім'я застосунку на fly.io (змініть після fly launch, якщо потрібно)
-app = 'lab06-movies-api'
-primary_region = 'waw'
+# fly.toml app configuration file generated for lab06-movies-api-bright-sea-1655 on 2026-05-20T23:46:04+03:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'lab06-movies-api-bright-sea-1655'
+primary_region = 'ams'
 
 [build]
   dockerfile = 'Dockerfile'
@@ -17,13 +21,13 @@ primary_region = 'waw'
   processes = ['app']
 
   [[http_service.checks]]
-    grace_period = '15s'
     interval = '15s'
-    method = 'GET'
     timeout = '5s'
+    grace_period = '15s'
+    method = 'GET'
     path = '/health'
 
 [[vm]]
   memory = '256mb'
-  cpu_kind = 'shared'
   cpus = 1
+  memory_mb = 256
