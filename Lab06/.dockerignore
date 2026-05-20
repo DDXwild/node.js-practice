@@ -1,0 +1,14 @@
+node_modules
+dist
+coverage
+.env
+.git
+.gitignore
+*.md
+*.docx
+tests
+scripts
+jest.config.js
+docker-compose*.yaml
+compose.yaml
+.dockerignore
