@@ -15,8 +15,8 @@ app.get('/health', (_req, res) => {
       readyState,
       connected,
     },
-  });242141241
-});dasdasdasd
+  });
+});
 
 app.use(cors());
 app.use(express.json());
